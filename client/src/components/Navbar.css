@@ -1,0 +1,377 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: relative;
+
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+
+    min-height: 72px;
+
+    margin: 0 auto;
+
+    padding: 0 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-top {
+    display: flex;
+
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #172033;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    line-height: 1.1;
+}
+
+.logo strong {
+    display: block;
+
+    color: #b91c1c;
+
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 7px;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   DESKTOP NAVIGATION
+========================= */
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #344054;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #b91c1c;
+}
+
+
+/* EMERGENCY BUTTON */
+
+.nav-links .emergency-link {
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    padding: 9px 14px;
+
+    border-radius: 6px;
+
+    font-weight: 600;
+}
+
+.nav-links .emergency-link:hover {
+    background: #991b1b;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.hamburger-button {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 8px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.hamburger-button span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    background: #172033;
+
+    border-radius: 2px;
+
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    .navbar-container {
+        padding: 0 18px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links .emergency-link {
+        padding: 8px 11px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        position: sticky;
+
+        top: 0;
+    }
+
+    .navbar-container {
+        min-height: 62px;
+
+        padding: 0 12px;
+
+        display: block;
+    }
+
+
+    /* Top row */
+
+    .navbar-top {
+        min-height: 62px;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 5px;
+    }
+
+
+    /* Three-line button */
+
+    .hamburger-button {
+        display: flex;
+
+        flex-shrink: 0;
+    }
+
+
+    /* Logo */
+
+    .logo {
+        font-size: 15px;
+
+        gap: 8px;
+    }
+
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+
+        font-size: 19px;
+    }
+
+
+    /* Mobile menu */
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 8px 0 14px;
+
+        border-top: 1px solid #eef0f2;
+
+        background: #ffffff;
+    }
+
+
+    /* When hamburger is clicked */
+
+    .nav-links.mobile-menu-open {
+        display: flex;
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 13px 10px;
+
+        font-size: 14px;
+
+        border-bottom: 1px solid #f2f4f7;
+    }
+
+    .nav-links a:hover {
+        background: #f9fafb;
+    }
+
+
+    /* Emergency */
+
+    .nav-links .emergency-link {
+        margin-top: 10px;
+
+        padding: 12px;
+
+        border-radius: 6px;
+
+        text-align: center;
+
+        background: #b91c1c;
+
+        color: #ffffff;
+    }
+
+    .nav-links .emergency-link:hover {
+        background: #991b1b;
+
+        color: #ffffff;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .navbar-container {
+        padding: 0 8px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .logo-icon {
+        width: 30px;
+        height: 30px;
+
+        font-size: 18px;
+    }
+
+    .hamburger-button {
+        width: 38px;
+    }
+}

@@ -1,0 +1,675 @@
+/* =========================================
+   PATIENT DASHBOARD
+========================================= */
+
+.patient-dashboard {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    padding: 45px 6% 70px;
+    background: #f8f9fb;
+    color: #172033;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.patient-dashboard-header {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.dashboard-label {
+    margin: 0 0 7px;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.patient-dashboard-header h1 {
+    margin: 0 0 8px;
+    color: #172033;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.dashboard-welcome {
+    margin: 0;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.dashboard-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.create-request-button,
+.patient-logout-button {
+    padding: 11px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.create-request-button {
+    border: none;
+    background: #b91c1c;
+    color: #ffffff;
+}
+
+.create-request-button:hover {
+    background: #991b1b;
+}
+
+.patient-logout-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+}
+
+.patient-logout-button:hover {
+    border-color: #b91c1c;
+    color: #b91c1c;
+    background: #fef2f2;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.patient-summary {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto 35px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.summary-card {
+    min-width: 0;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.summary-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #667085;
+    font-size: 13px;
+}
+
+.summary-card strong {
+    color: #172033;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   REQUEST SECTION
+========================================= */
+
+.patient-requests-section {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.requests-heading {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    margin: 0 0 6px;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.requests-heading h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   REQUEST GRID
+========================================= */
+
+.request-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+/* =========================================
+   REQUEST CARD
+========================================= */
+
+.patient-request-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.request-card-header {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.request-title {
+    margin: 0 0 5px;
+    color: #172033;
+    font-size: 16px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.request-id {
+    margin: 0;
+    color: #98a2b3;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.request-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.request-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.request-status.accepted {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.request-status.fulfilled {
+    background: #ecfdf3;
+    color: #15803d;
+}
+
+
+/* =========================================
+   BLOOD GROUP
+========================================= */
+
+.blood-group-section {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #fef2f2;
+    border-bottom: 1px solid #fee2e2;
+}
+
+.blood-label {
+    color: #667085;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.blood-group-section strong {
+    color: #b91c1c;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.request-details {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.request-detail {
+    min-width: 0;
+}
+
+.request-detail span {
+    display: block;
+    margin-bottom: 5px;
+    color: #98a2b3;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.request-detail strong {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+
+/* =========================================
+   PENDING BOX
+========================================= */
+
+.pending-box {
+    margin: 0 20px 20px;
+    padding: 14px;
+    background: #fffaf5;
+    border: 1px solid #fed7aa;
+    border-radius: 6px;
+}
+
+.pending-box span {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #c2410c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.pending-box p {
+    margin: 0;
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   ACCEPTED BOX
+========================================= */
+
+.accepted-box {
+    margin: 0 20px 20px;
+    padding: 15px;
+    background: #f8fbff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+}
+
+.accepted-box strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #1e40af;
+    font-size: 13px;
+}
+
+.accepted-box p {
+    margin: 0 0 12px;
+    color: #667085;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.accepted-box button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #b91c1c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accepted-box button:hover {
+    background: #991b1b;
+}
+
+
+/* =========================================
+   FULFILLED BOX
+========================================= */
+
+.fulfilled-box {
+    margin: 0 20px 20px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 6px;
+}
+
+.fulfilled-box > span {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #16a34a;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fulfilled-box strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #166534;
+    font-size: 13px;
+}
+
+.fulfilled-box p {
+    margin: 0;
+    color: #667085;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   EMPTY / LOADING
+========================================= */
+
+.dashboard-message,
+.empty-requests {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 55px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.dashboard-message p {
+    margin: 0;
+    color: #667085;
+    font-size: 14px;
+}
+
+.empty-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.empty-requests h3 {
+    margin: 0 0 8px;
+    color: #172033;
+    font-size: 18px;
+}
+
+.empty-requests p {
+    max-width: 430px;
+    margin: 0 auto 20px;
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.empty-requests button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #b91c1c;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.empty-requests button:hover {
+    background: #991b1b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .patient-dashboard {
+        padding: 35px 25px 60px;
+    }
+
+    .patient-dashboard-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dashboard-actions {
+        width: 100%;
+    }
+
+    .patient-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .request-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .patient-dashboard {
+        padding: 30px 15px 50px;
+    }
+
+    .patient-dashboard-header {
+        margin-bottom: 25px;
+    }
+
+    .patient-dashboard-header h1 {
+        font-size: 27px;
+    }
+
+    .dashboard-welcome {
+        font-size: 13px;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .create-request-button,
+    .patient-logout-button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .patient-summary {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .summary-card {
+        padding: 16px;
+    }
+
+    .summary-label {
+        font-size: 12px;
+    }
+
+    .summary-card strong {
+        font-size: 22px;
+    }
+
+    .requests-heading {
+        margin-bottom: 17px;
+    }
+
+    .requests-heading h2 {
+        font-size: 21px;
+    }
+
+    .request-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .request-card-header {
+        padding: 17px;
+        flex-direction: column;
+    }
+
+    .request-status {
+        align-self: flex-start;
+    }
+
+    .blood-group-section {
+        padding: 17px;
+    }
+
+    .blood-group-section strong {
+        font-size: 22px;
+    }
+
+    .request-details {
+        padding: 17px;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .pending-box {
+        margin: 0 17px 17px;
+        padding: 13px;
+    }
+
+    .accepted-box {
+        margin: 0 17px 17px;
+        padding: 14px;
+    }
+
+    .accepted-box button {
+        width: 100%;
+        min-height: 42px;
+    }
+
+    .fulfilled-box {
+        margin: 0 17px 17px;
+        padding: 14px;
+    }
+
+    .dashboard-message,
+    .empty-requests {
+        padding: 40px 18px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .patient-dashboard {
+        padding: 25px 12px 40px;
+    }
+
+    .patient-dashboard-header h1 {
+        font-size: 23px;
+    }
+
+    .patient-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        padding: 15px;
+    }
+
+    .request-card-header {
+        padding: 15px;
+    }
+
+    .blood-group-section {
+        padding: 15px;
+    }
+
+    .request-details {
+        padding: 15px;
+    }
+
+    .pending-box {
+        margin: 0 15px 15px;
+    }
+
+    .accepted-box {
+        margin: 0 15px 15px;
+    }
+
+    .fulfilled-box {
+        margin: 0 15px 15px;
+    }
+
+    .fulfilled-box {
+        gap: 9px;
+    }
+
+    .fulfilled-box p {
+        font-size: 11px;
+    }
+}

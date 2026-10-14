@@ -1,0 +1,1247 @@
+/* =================================
+   ADMIN DASHBOARD
+================================= */
+
+.admin-dashboard {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #f7f8fa;
+    color: #172033;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.dashboard-header {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e4e7ec;
+}
+
+.dashboard-header-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 28px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+.dashboard-label {
+    margin: 0 0 6px;
+
+    color: #b91c1c;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.dashboard-title {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+.dashboard-subtitle {
+    margin: 7px 0 0;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   LOGOUT
+================================= */
+
+.logout-button {
+    flex-shrink: 0;
+
+    border: 1px solid #d0d5dd;
+
+    background: #ffffff;
+
+    color: #344054;
+
+    padding: 9px 18px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.logout-button:hover {
+    background: #f9fafb;
+
+    border-color: #b91c1c;
+
+    color: #b91c1c;
+}
+
+
+/* =================================
+   MAIN CONTENT
+================================= */
+
+.admin-dashboard-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 35px 24px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   WELCOME
+================================= */
+
+.welcome-section {
+    margin-bottom: 32px;
+}
+
+.welcome-section h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+}
+
+.welcome-section p {
+    margin: 7px 0 0;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   SECTIONS
+================================= */
+
+.admin-section {
+    width: 100%;
+
+    margin-top: 42px;
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.section-label {
+    margin: 0 0 5px;
+
+    color: #b91c1c;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.3px;
+}
+
+.section-title {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+.section-subtitle {
+    margin: 6px 0 0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.section-count {
+    flex-shrink: 0;
+
+    white-space: nowrap;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    color: #667085;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =================================
+   STATISTICS
+================================= */
+
+.statistics-section {
+    margin-top: 25px;
+}
+
+.dashboard-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.stat-card {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    box-sizing: border-box;
+}
+
+.stat-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.donor-stat-icon {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.request-stat-icon {
+    background: #f2f4f7;
+    color: #344054;
+}
+
+.pending-stat-icon {
+    background: #fffaeb;
+    color: #b54708;
+}
+
+.stat-content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.stat-label {
+    color: #667085;
+
+    font-size: 12px;
+}
+
+.stat-number {
+    color: #172033;
+
+    font-size: 24px;
+}
+
+
+/* =================================
+   DONOR GRID
+================================= */
+
+.donor-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.donor-card {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+}
+
+.donor-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #eef0f2;
+}
+
+.donor-avatar {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.donor-info {
+    min-width: 0;
+
+    flex: 1;
+}
+
+.donor-name {
+    margin: 0;
+
+    font-size: 16px;
+
+    overflow-wrap: anywhere;
+}
+
+.donor-email {
+    margin: 4px 0 0;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.blood-group-badge {
+    flex-shrink: 0;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    padding: 6px 9px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =================================
+   DONOR DETAILS
+================================= */
+
+.donor-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    padding: 18px 0;
+}
+
+.detail-item {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.detail-label {
+    color: #98a2b3;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    color: #344054;
+
+    font-size: 13px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =================================
+   MEDICAL REPORT
+================================= */
+
+.medical-report-box {
+    min-width: 0;
+
+    background: #f8f9fb;
+
+    border: 1px solid #eaecf0;
+
+    border-radius: 7px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    box-sizing: border-box;
+}
+
+.report-info {
+    min-width: 0;
+}
+
+.report-label {
+    display: block;
+
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.8px;
+}
+
+.report-file-name {
+    margin: 4px 0 0;
+
+    color: #344054;
+
+    font-size: 12px;
+
+    overflow-wrap: anywhere;
+}
+
+.no-report {
+    margin: 4px 0 0;
+
+    color: #98a2b3;
+
+    font-size: 12px;
+}
+
+.report-button {
+    flex-shrink: 0;
+
+    border: 1px solid #d0d5dd;
+
+    background: #ffffff;
+
+    color: #344054;
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.report-button:hover {
+    border-color: #b91c1c;
+
+    color: #b91c1c;
+}
+
+
+/* =================================
+   DONOR FOOTER
+================================= */
+
+.donor-card-footer {
+    margin-top: 18px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #eef0f2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+}
+
+.verification-status {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.status-badge {
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.status-badge.verified {
+    background: #ecfdf3;
+
+    color: #027a48;
+}
+
+.status-badge.rejected {
+    background: #fef3f2;
+
+    color: #b42318;
+}
+
+.status-badge.pending {
+    background: #fffaeb;
+
+    color: #b54708;
+}
+
+
+/* =================================
+   DONOR ACTIONS
+================================= */
+
+.donor-actions {
+    display: flex;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+.verify-button,
+.reject-button {
+    min-height: 36px;
+
+    padding: 7px 11px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.verify-button {
+    border: 1px solid #027a48;
+
+    background: #ecfdf3;
+
+    color: #027a48;
+}
+
+.verify-button:hover {
+    background: #d1fadf;
+}
+
+.reject-button {
+    border: 1px solid #b42318;
+
+    background: #fef3f2;
+
+    color: #b42318;
+}
+
+.reject-button:hover {
+    background: #fee4e2;
+}
+
+
+/* =================================
+   REQUEST GRID
+================================= */
+
+.request-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.admin-request-card {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+}
+
+.request-card-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #eef0f2;
+}
+
+.request-card-label {
+    margin: 0 0 5px;
+
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.request-card-header h3 {
+    margin: 0;
+
+    font-size: 16px;
+
+    overflow-wrap: anywhere;
+}
+
+.request-status {
+    flex-shrink: 0;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.request-status.pending {
+    background: #fffaeb;
+
+    color: #b54708;
+}
+
+.request-status.accepted {
+    background: #eff8ff;
+
+    color: #175cd3;
+}
+
+.request-status.fulfilled {
+    background: #ecfdf3;
+
+    color: #027a48;
+}
+
+
+/* =================================
+   BLOOD GROUP
+================================= */
+
+.request-blood-group {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #eef0f2;
+}
+
+.request-blood-group span {
+    color: #667085;
+
+    font-size: 12px;
+}
+
+.request-blood-group strong {
+    color: #b91c1c;
+
+    font-size: 21px;
+}
+
+
+/* =================================
+   REQUEST DETAILS
+================================= */
+
+.request-details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    padding: 18px 0;
+}
+
+.request-details-grid div {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.request-details-grid span {
+    color: #98a2b3;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+.request-details-grid strong {
+    color: #344054;
+
+    font-size: 12px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =================================
+   REQUEST FOOTER
+================================= */
+
+.request-card-footer {
+    padding-top: 15px;
+
+    border-top: 1px solid #eef0f2;
+}
+
+.accept-request-button {
+    width: 100%;
+
+    min-height: 42px;
+
+    border: none;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.accept-request-button:hover {
+    background: #991b1b;
+}
+
+.request-info-message {
+    margin: 0;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+.accepted-message {
+    background: #eff8ff;
+
+    color: #175cd3;
+}
+
+.fulfilled-message {
+    background: #ecfdf3;
+
+    color: #027a48;
+}
+
+
+/* =================================
+   EMPTY STATE
+================================= */
+
+.empty-state {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.empty-state h3 {
+    margin: 0;
+
+    font-size: 16px;
+}
+
+.empty-state p {
+    margin: 7px 0 0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   TABLET
+   601px - 900px
+================================= */
+
+@media (max-width: 900px) {
+
+    .dashboard-header-content {
+        padding: 25px 20px;
+    }
+
+    .admin-dashboard-content {
+        padding: 30px 20px 50px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 17px;
+
+        gap: 10px;
+    }
+
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-number {
+        font-size: 22px;
+    }
+
+    .donor-grid,
+    .request-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =================================
+   SMALL TABLET
+   701px - 800px
+================================= */
+
+@media (max-width: 800px) {
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .donor-grid,
+    .request-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donor-card,
+    .admin-request-card {
+        padding: 20px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+   600px AND BELOW
+================================= */
+
+@media (max-width: 600px) {
+
+    .dashboard-header-content {
+        padding: 22px 16px;
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .dashboard-title {
+        font-size: 24px;
+    }
+
+    .dashboard-subtitle {
+        font-size: 13px;
+    }
+
+    .logout-button {
+        width: 100%;
+
+        min-height: 42px;
+    }
+
+
+    /* MAIN */
+
+    .admin-dashboard-content {
+        padding: 25px 15px 45px;
+    }
+
+    .welcome-section {
+        margin-bottom: 25px;
+    }
+
+    .welcome-section h2 {
+        font-size: 20px;
+    }
+
+    .welcome-section p {
+        font-size: 13px;
+    }
+
+
+    /* SECTIONS */
+
+    .admin-section {
+        margin-top: 32px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-bottom: 16px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+    }
+
+    .section-count {
+        align-self: flex-start;
+    }
+
+
+    /* STATS */
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+
+
+    /* DONOR */
+
+    .donor-card,
+    .admin-request-card {
+        padding: 18px;
+    }
+
+    .donor-card-header {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .donor-info {
+        flex: 1;
+
+        min-width: 150px;
+    }
+
+    .blood-group-badge {
+        margin-left: auto;
+    }
+
+    .donor-details {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    /* MEDICAL REPORT */
+
+    .medical-report-box {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .report-button {
+        width: 100%;
+
+        min-height: 38px;
+    }
+
+
+    /* DONOR FOOTER */
+
+    .donor-card-footer {
+        align-items: stretch;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .donor-actions {
+        width: 100%;
+    }
+
+    .verify-button,
+    .reject-button {
+        flex: 1;
+
+        min-height: 40px;
+    }
+
+
+    /* REQUEST */
+
+    .request-card-header {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .request-status {
+        align-self: flex-start;
+    }
+
+    .request-details-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .request-blood-group {
+        padding: 15px 0;
+    }
+
+    .request-blood-group strong {
+        font-size: 20px;
+    }
+
+    .accept-request-button {
+        min-height: 44px;
+    }
+
+
+    /* EMPTY */
+
+    .empty-state {
+        padding: 35px 18px;
+    }
+}
+
+
+/* =================================
+   VERY SMALL MOBILE
+   400px AND BELOW
+================================= */
+
+@media (max-width: 400px) {
+
+    .dashboard-header-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .admin-dashboard-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .dashboard-title {
+        font-size: 22px;
+    }
+
+    .donor-card,
+    .admin-request-card {
+        padding: 15px;
+    }
+
+    .donor-card-header {
+        gap: 9px;
+    }
+
+    .donor-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .donor-name {
+        font-size: 15px;
+    }
+
+    .donor-email {
+        font-size: 11px;
+    }
+
+    .blood-group-badge {
+        font-size: 11px;
+        padding: 5px 7px;
+    }
+
+    .verify-button,
+    .reject-button {
+        font-size: 10px;
+    }
+}

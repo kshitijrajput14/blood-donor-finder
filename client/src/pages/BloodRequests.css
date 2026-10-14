@@ -1,0 +1,343 @@
+.blood-requests-page {
+    min-height: calc(100vh - 70px);
+    background: #f8f9fb;
+    padding: 50px 20px 70px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.blood-requests-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blood-requests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.blood-requests-label {
+    margin: 0 0 8px;
+    color: #b91c1c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.blood-requests-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.blood-requests-header p:last-child {
+    margin: 10px 0 0;
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.request-count {
+    min-width: 170px;
+    padding: 18px 22px;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.request-count span {
+    display: block;
+    color: #667085;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.request-count strong {
+    color: #b91c1c;
+    font-size: 28px;
+}
+
+.public-request-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.public-request-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 11px;
+    padding: 22px;
+    box-shadow: 0 3px 12px rgba(16, 24, 40, 0.04);
+}
+
+.public-request-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.request-title {
+    margin: 0 0 5px;
+    color: #172033;
+    font-size: 17px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.request-id {
+    color: #98a2b3;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.public-request-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.public-request-status.pending {
+    background: #fffaeb;
+    color: #b54708;
+}
+
+.public-request-status.accepted {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+.blood-required {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+    padding: 14px 16px;
+    background: #fef3f2;
+    border-radius: 7px;
+    gap: 15px;
+}
+
+.blood-required span {
+    color: #667085;
+    font-size: 13px;
+}
+
+.blood-required strong {
+    color: #b91c1c;
+    font-size: 21px;
+}
+
+.public-request-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.public-request-details div:last-child {
+    grid-column: 1 / -1;
+}
+
+.public-request-details span {
+    display: block;
+    margin-bottom: 5px;
+    color: #98a2b3;
+    font-size: 12px;
+}
+
+.public-request-details strong {
+    color: #344054;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.request-note {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eaecf0;
+}
+
+.request-note span {
+    color: #344054;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.request-note p {
+    margin: 5px 0 0;
+    color: #667085;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.requests-message,
+.requests-empty {
+    padding: 45px 25px;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.requests-empty h3 {
+    margin: 0;
+    color: #172033;
+}
+
+.requests-empty p {
+    margin: 8px 0 0;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .blood-requests-page {
+        padding: 40px 20px 60px;
+    }
+
+    .blood-requests-header {
+        align-items: flex-start;
+    }
+
+    .blood-requests-header h1 {
+        font-size: 30px;
+    }
+
+    .public-request-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .blood-requests-page {
+        padding: 30px 15px 50px;
+    }
+
+    .blood-requests-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    .blood-requests-label {
+        font-size: 11px;
+    }
+
+    .blood-requests-header h1 {
+        font-size: 27px;
+        line-height: 1.25;
+    }
+
+    .blood-requests-header p:last-child {
+        font-size: 14px;
+    }
+
+    .request-count {
+        width: 100%;
+        min-width: 0;
+        padding: 15px 20px;
+    }
+
+    .request-count strong {
+        font-size: 25px;
+    }
+
+    .public-request-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .public-request-card {
+        padding: 18px;
+    }
+
+    .public-request-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .public-request-status {
+        align-self: flex-start;
+    }
+
+    .blood-required {
+        margin: 15px 0;
+        padding: 13px 14px;
+    }
+
+    .public-request-details {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .public-request-details div:last-child {
+        grid-column: auto;
+    }
+
+    .request-note {
+        margin-top: 17px;
+        padding-top: 14px;
+    }
+
+    .requests-message,
+    .requests-empty {
+        padding: 35px 18px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .blood-requests-page {
+        padding: 25px 12px 40px;
+    }
+
+    .blood-requests-header h1 {
+        font-size: 24px;
+    }
+
+    .public-request-card {
+        padding: 16px;
+    }
+
+    .request-count {
+        padding: 14px 16px;
+    }
+
+    .blood-required strong {
+        font-size: 19px;
+    }
+}

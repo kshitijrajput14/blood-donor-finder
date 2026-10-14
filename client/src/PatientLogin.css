@@ -1,0 +1,291 @@
+/* =================================
+   PATIENT LOGIN PAGE
+================================= */
+
+.patient-login-page {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #f8f9fb;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.patient-login-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 38px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.patient-login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.patient-login-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fef2f2;
+    color: #b91c1c;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.patient-login-label {
+    margin: 0 0 7px;
+    color: #b91c1c;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.patient-login-header h1 {
+    margin: 0 0 8px;
+    color: #172033;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.patient-login-header > p:last-child {
+    margin: 0;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.patient-login-form {
+    width: 100%;
+}
+
+.patient-login-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.patient-login-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.patient-login-group input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #172033;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.patient-login-group input::placeholder {
+    color: #9ca3af;
+}
+
+.patient-login-group input:focus {
+    border-color: #b91c1c;
+    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.08);
+}
+
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.patient-login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #b91c1c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.patient-login-button:hover {
+    background: #991b1b;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.patient-login-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.patient-login-footer p {
+    margin: 0 0 8px;
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.patient-login-footer button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #b91c1c;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.patient-login-footer button:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .patient-login-page {
+        padding: 40px 20px;
+    }
+
+    .patient-login-card {
+        max-width: 430px;
+        padding: 35px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .patient-login-page {
+        min-height: calc(100vh - 70px);
+        padding: 30px 15px;
+    }
+
+    .patient-login-card {
+        max-width: 100%;
+        padding: 30px 22px;
+        border-radius: 9px;
+    }
+
+    .patient-login-header {
+        margin-bottom: 25px;
+    }
+
+    .patient-login-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 14px;
+        font-size: 25px;
+    }
+
+    .patient-login-header h1 {
+        font-size: 25px;
+    }
+
+    .patient-login-header > p:last-child {
+        font-size: 13px;
+    }
+
+    .patient-login-group {
+        margin-bottom: 17px;
+    }
+
+    .patient-login-group input {
+        min-height: 45px;
+        padding: 11px 12px;
+    }
+
+    .patient-login-button {
+        min-height: 45px;
+        padding: 11px;
+    }
+
+    .patient-login-footer {
+        margin-top: 22px;
+        padding-top: 18px;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+
+    .patient-login-page {
+        padding: 25px 12px;
+    }
+
+    .patient-login-card {
+        padding: 26px 18px;
+    }
+
+    .patient-login-header h1 {
+        font-size: 23px;
+    }
+
+    .patient-login-label {
+        font-size: 10px;
+    }
+
+    .patient-login-group label {
+        font-size: 13px;
+    }
+
+    .patient-login-footer p {
+        font-size: 12px;
+    }
+
+    .patient-login-footer button {
+        font-size: 13px;
+    }
+}

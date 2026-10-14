@@ -1,0 +1,527 @@
+.blood-request-page {
+    min-height: calc(100vh - 70px);
+    background: #f8f9fb;
+    padding: 50px 20px 70px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.blood-request-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.blood-request-header {
+    margin-bottom: 30px;
+}
+
+.blood-request-label {
+    margin: 0 0 8px;
+    color: #b91c1c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.blood-request-header h1 {
+    margin: 0;
+    color: #172033;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.blood-request-header p:last-child {
+    margin-top: 10px;
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.blood-request-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0 3px 12px rgba(16, 24, 40, 0.04);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.request-form-group {
+    margin-bottom: 20px;
+    min-width: 0;
+}
+
+.request-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #344054;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.request-form-group input,
+.request-form-group select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #172033;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.request-form-group input:focus,
+.request-form-group select:focus {
+    border-color: #b91c1c;
+}
+
+.request-form-group input::placeholder {
+    color: #98a2b3;
+}
+
+.submit-request-button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #b91c1c;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-request-button:hover {
+    background: #991b1b;
+}
+
+.request-message {
+    margin-top: 20px;
+    padding: 13px 15px;
+    border-radius: 7px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.request-message.success {
+    background: #ecfdf3;
+    color: #027a48;
+    border: 1px solid #abefc6;
+}
+
+.request-message.error {
+    background: #fef3f2;
+    color: #b42318;
+    border: 1px solid #fecdca;
+}
+
+/* Matching donors */
+
+.matching-donors-section {
+    margin-top: 50px;
+}
+
+.matching-header {
+    margin-bottom: 22px;
+}
+
+.matching-header h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 25px;
+}
+
+.matching-header p:last-child {
+    margin-top: 8px;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.matching-donor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.matching-donor-card {
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.donor-card-top {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eaecf0;
+    min-width: 0;
+}
+
+.donor-avatar {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fef3f2;
+    color: #b91c1c;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.donor-card-top h3 {
+    margin: 0 0 4px;
+    color: #172033;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.donor-card-top span {
+    color: #027a48;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.donor-card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 20px 0;
+}
+
+.donor-card-details div:last-child {
+    grid-column: 1 / -1;
+}
+
+.donor-card-details small {
+    display: block;
+    margin-bottom: 5px;
+    color: #98a2b3;
+    font-size: 12px;
+}
+
+.donor-card-details strong {
+    color: #344054;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-donor-button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border-radius: 7px;
+    background: #172033;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-donor-button:hover {
+    background: #101828;
+}
+
+.no-donors-box {
+    margin-top: 35px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.no-donors-box h3 {
+    margin: 0;
+    color: #172033;
+}
+
+.no-donors-box p {
+    margin: 8px 0 0;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Patient login required */
+
+.patient-login-required {
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-required-icon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #fef3f2;
+    color: #b91c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.patient-login-required h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 23px;
+}
+
+.patient-login-required p {
+    margin: 10px auto 25px;
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.login-required-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.patient-login-button,
+.patient-register-button {
+    border-radius: 7px;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.patient-login-button {
+    border: none;
+    background: #b91c1c;
+    color: #ffffff;
+}
+
+.patient-register-button {
+    background: #ffffff;
+    color: #344054;
+    border: 1px solid #d0d5dd;
+}
+
+.patient-login-button:hover {
+    background: #991b1b;
+}
+
+.patient-register-button:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .blood-request-page {
+        padding: 40px 20px 60px;
+    }
+
+    .blood-request-header h1 {
+        font-size: 30px;
+    }
+
+    .blood-request-card {
+        padding: 26px;
+    }
+
+    .matching-donor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .blood-request-page {
+        padding: 30px 15px 50px;
+    }
+
+    .blood-request-header {
+        margin-bottom: 22px;
+    }
+
+    .blood-request-label {
+        font-size: 11px;
+    }
+
+    .blood-request-header h1 {
+        font-size: 27px;
+        line-height: 1.25;
+    }
+
+    .blood-request-header p:last-child {
+        font-size: 14px;
+    }
+
+    .blood-request-card {
+        padding: 20px 16px;
+        border-radius: 10px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .request-form-group {
+        margin-bottom: 18px;
+    }
+
+    .request-form-group input,
+    .request-form-group select {
+        padding: 12px;
+        min-height: 44px;
+    }
+
+    .submit-request-button {
+        min-height: 44px;
+    }
+
+    .matching-donors-section {
+        margin-top: 38px;
+    }
+
+    .matching-header {
+        margin-bottom: 18px;
+    }
+
+    .matching-header h2 {
+        font-size: 22px;
+    }
+
+    .matching-header p:last-child {
+        font-size: 13px;
+    }
+
+    .matching-donor-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .matching-donor-card {
+        padding: 18px;
+    }
+
+    .donor-card-details {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .donor-card-details div:last-child {
+        grid-column: auto;
+    }
+
+    .contact-donor-button {
+        min-height: 44px;
+    }
+
+    .no-donors-box {
+        padding: 25px 18px;
+    }
+
+    .patient-login-required {
+        padding: 35px 20px;
+    }
+
+    .patient-login-required h2 {
+        font-size: 21px;
+    }
+
+    .patient-login-required p {
+        font-size: 13px;
+    }
+
+    .login-required-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .patient-login-button,
+    .patient-register-button {
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .blood-request-page {
+        padding: 25px 12px 40px;
+    }
+
+    .blood-request-header h1 {
+        font-size: 24px;
+    }
+
+    .blood-request-card {
+        padding: 18px 14px;
+    }
+
+    .matching-donor-card {
+        padding: 16px;
+    }
+
+    .donor-card-top {
+        gap: 10px;
+    }
+
+    .donor-avatar {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .donor-card-top h3 {
+        font-size: 16px;
+    }
+
+    .patient-login-required {
+        padding: 30px 16px;
+    }
+}

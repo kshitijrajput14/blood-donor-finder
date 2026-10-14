@@ -1,0 +1,877 @@
+/* =================================
+   DONOR DASHBOARD
+================================= */
+
+.donor-dashboard {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+
+    background: #f8f9fb;
+
+    padding: 50px 7%;
+
+    color: #172033;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.donor-dashboard-header {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 25px;
+}
+
+.dashboard-label {
+    margin: 0 0 8px;
+
+    color: #b91c1c;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.donor-dashboard-header h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.dashboard-welcome {
+    margin: 10px 0 0;
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   LOGOUT
+================================ */
+
+.donor-logout-button {
+    flex-shrink: 0;
+
+    border: 1px solid #d0d5dd;
+
+    background: #ffffff;
+
+    color: #344054;
+
+    padding: 10px 20px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.donor-logout-button:hover {
+    background: #f2f4f7;
+}
+
+
+/* ================================
+   PROFILE CARD
+================================ */
+
+.donor-profile-card {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+.donor-profile-avatar {
+    width: 65px;
+    height: 65px;
+
+    min-width: 65px;
+
+    border-radius: 50%;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.donor-profile-info {
+    min-width: 0;
+}
+
+.donor-profile-info h2 {
+    margin: 0 0 5px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    overflow-wrap: anywhere;
+}
+
+.donor-profile-info p {
+    margin: 0 0 10px;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+.verified-badge {
+    display: inline-block;
+
+    background: #ecfdf3;
+
+    color: #027a48;
+
+    border: 1px solid #abefc6;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   SECTION
+================================ */
+
+.donor-information-section,
+.quick-actions-section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto 45px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    margin: 0 0 5px;
+
+    color: #b91c1c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size: 23px;
+
+    color: #172033;
+
+    line-height: 1.3;
+}
+
+
+/* ================================
+   INFORMATION CARDS
+================================ */
+
+.donor-info-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.donor-info-card {
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+}
+
+.info-card-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #667085;
+
+    font-size: 13px;
+}
+
+.donor-info-card strong {
+    display: block;
+
+    font-size: 18px;
+
+    color: #172033;
+
+    overflow-wrap: anywhere;
+}
+
+.blood-group-value {
+    color: #b91c1c !important;
+
+    font-size: 25px !important;
+}
+
+.status-value {
+    color: #027a48 !important;
+}
+
+
+/* ================================
+   QUICK ACTIONS
+================================ */
+
+.quick-actions-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+.dashboard-action-card {
+    position: relative;
+
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: left;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+
+.dashboard-action-card:hover {
+    border-color: #c9cdd4;
+
+    box-shadow: 0 5px 18px rgba(16, 24, 40, 0.06);
+
+    transform: translateY(-1px);
+}
+
+.action-icon {
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.notification-icon {
+    background: #fef3f2;
+
+    color: #b91c1c;
+}
+
+.edit-icon {
+    background: #f2f4f7;
+
+    color: #344054;
+}
+
+.search-icon {
+    background: #eff8ff;
+
+    color: #175cd3;
+}
+
+.dashboard-action-card strong {
+    display: block;
+
+    color: #172033;
+
+    font-size: 15px;
+}
+
+.dashboard-action-card p {
+    margin: 5px 0 0;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+.action-arrow {
+    margin-left: auto;
+
+    color: #98a2b3;
+
+    font-size: 20px;
+}
+
+
+/* ================================
+   DONOR NOTE
+================================ */
+
+.donor-note {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    background: #fff8f7;
+
+    border: 1px solid #fecdca;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+}
+
+.donor-note-icon {
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    border-radius: 50%;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.donor-note-content {
+    min-width: 0;
+}
+
+.donor-note strong {
+    color: #7a271a;
+
+    font-size: 14px;
+}
+
+.donor-note p {
+    margin: 5px 0 0;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* ================================
+   LOGIN REQUIRED
+================================ */
+
+.dashboard-login-required {
+    width: 100%;
+
+    min-height: calc(100vh - 80px);
+
+    background: #f8f9fb;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+}
+
+.login-required-card {
+    width: 100%;
+    max-width: 450px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 12px;
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.login-required-icon {
+    width: 45px;
+    height: 45px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #fef3f2;
+
+    color: #b91c1c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+
+    font-size: 20px;
+}
+
+.login-required-card h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 24px;
+}
+
+.login-required-card p {
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 10px 0 25px;
+}
+
+.login-required-card button {
+    border: none;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-required-card button:hover {
+    background: #991b1b;
+}
+
+
+/* ================================
+   TABLET
+   601px - 900px
+================================ */
+
+@media (max-width: 900px) {
+
+    .donor-dashboard {
+        padding: 40px 25px;
+    }
+
+    .donor-dashboard-header {
+        gap: 20px;
+    }
+
+    .donor-dashboard-header h1 {
+        font-size: 34px;
+    }
+
+    .donor-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ================================
+   SMALL TABLET
+   601px - 700px
+================================ */
+
+@media (max-width: 700px) {
+
+    .donor-dashboard-header {
+        flex-direction: column;
+    }
+
+    .donor-logout-button {
+        width: auto;
+    }
+
+    .donor-profile-card {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+   600px AND BELOW
+================================ */
+
+@media (max-width: 600px) {
+
+    .donor-dashboard {
+        min-height: auto;
+
+        padding: 30px 15px 45px;
+    }
+
+
+    /* HEADER */
+
+    .donor-dashboard-header {
+        margin-bottom: 25px;
+
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .dashboard-label {
+        font-size: 11px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .donor-dashboard-header h1 {
+        font-size: 29px;
+
+        line-height: 1.2;
+    }
+
+    .dashboard-welcome {
+        margin-top: 8px;
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+    .donor-logout-button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+
+
+    /* PROFILE */
+
+    .donor-profile-card {
+        margin-bottom: 35px;
+
+        padding: 18px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 14px;
+
+        border-radius: 9px;
+    }
+
+    .donor-profile-avatar {
+        width: 55px;
+        height: 55px;
+
+        min-width: 55px;
+
+        font-size: 21px;
+    }
+
+    .donor-profile-info h2 {
+        font-size: 19px;
+    }
+
+    .donor-profile-info p {
+        font-size: 13px;
+    }
+
+
+    /* SECTIONS */
+
+    .donor-information-section,
+    .quick-actions-section {
+        margin-bottom: 35px;
+    }
+
+    .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .section-label {
+        font-size: 11px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+
+    /* INFORMATION */
+
+    .donor-info-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .donor-info-card {
+        padding: 18px;
+    }
+
+    .info-card-label {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+    }
+
+    .donor-info-card strong {
+        font-size: 16px;
+    }
+
+    .blood-group-value {
+        font-size: 23px !important;
+    }
+
+
+    /* QUICK ACTIONS */
+
+    .quick-actions-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .dashboard-action-card {
+        padding: 17px;
+
+        gap: 12px;
+    }
+
+    .action-icon {
+        width: 40px;
+        height: 40px;
+
+        min-width: 40px;
+
+        font-size: 18px;
+    }
+
+    .dashboard-action-card strong {
+        font-size: 14px;
+    }
+
+    .dashboard-action-card p {
+        font-size: 11px;
+    }
+
+    .action-arrow {
+        font-size: 18px;
+    }
+
+
+    /* NOTE */
+
+    .donor-note {
+        padding: 16px;
+
+        gap: 10px;
+
+        border-radius: 8px;
+    }
+
+    .donor-note-icon {
+        width: 28px;
+        height: 28px;
+
+        min-width: 28px;
+
+        font-size: 13px;
+    }
+
+    .donor-note strong {
+        font-size: 13px;
+    }
+
+    .donor-note p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+
+    /* LOGIN REQUIRED */
+
+    .dashboard-login-required {
+        min-height: calc(100vh - 62px);
+
+        padding: 20px 15px;
+    }
+
+    .login-required-card {
+        padding: 35px 20px;
+    }
+
+    .login-required-card h2 {
+        font-size: 21px;
+    }
+
+    .login-required-card p {
+        font-size: 13px;
+    }
+
+    .login-required-card button {
+        width: 100%;
+
+        min-height: 44px;
+    }
+}
+
+
+/* ================================
+   VERY SMALL MOBILE
+   400px AND BELOW
+================================ */
+
+@media (max-width: 400px) {
+
+    .donor-dashboard {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .donor-dashboard-header h1 {
+        font-size: 26px;
+    }
+
+    .donor-profile-card {
+        padding: 16px;
+    }
+
+    .donor-info-card {
+        padding: 16px;
+    }
+
+    .dashboard-action-card {
+        padding: 15px;
+    }
+
+    .donor-note {
+        padding: 14px;
+    }
+}

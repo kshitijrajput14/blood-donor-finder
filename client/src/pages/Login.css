@@ -1,0 +1,406 @@
+/* =================================
+   DONOR LOGIN PAGE
+================================= */
+
+.login-page {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 20px;
+
+    background: #f8f9fb;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+}
+
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.login-header {
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.login-icon {
+    width: 48px;
+    height: 48px;
+
+    margin: 0 auto 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+
+    border-radius: 8px;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+.login-label {
+    margin: 0 0 7px;
+
+    color: #b91c1c;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.login-header h1 {
+    margin: 0 0 8px;
+
+    color: #172033;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+}
+
+
+.login-header > p:last-child {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.login-form {
+    width: 100%;
+}
+
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+.form-group input:focus {
+    border-color: #b91c1c;
+
+    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.08);
+}
+
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.login-button {
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 12px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+
+.login-button:hover {
+    background: #991b1b;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.login-footer {
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+}
+
+
+.login-footer p {
+    margin: 0 0 8px;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.login-footer button {
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-footer button:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   TABLET
+   601px - 900px
+================================= */
+
+@media (max-width: 900px) {
+
+    .login-page {
+        min-height: calc(100vh - 62px);
+
+        padding: 45px 20px;
+    }
+
+    .login-card {
+        max-width: 430px;
+
+        padding: 34px;
+    }
+}
+
+
+/* =================================
+   MOBILE
+   600px AND BELOW
+================================= */
+
+@media (max-width: 600px) {
+
+    .login-page {
+        min-height: calc(100vh - 62px);
+
+        padding: 35px 15px;
+    }
+
+    .login-card {
+        width: 100%;
+
+        padding: 28px 22px;
+
+        border-radius: 8px;
+    }
+
+    .login-header {
+        margin-bottom: 25px;
+    }
+
+    .login-icon {
+        width: 44px;
+        height: 44px;
+
+        margin-bottom: 13px;
+
+        font-size: 25px;
+    }
+
+    .login-label {
+        font-size: 10px;
+
+        letter-spacing: 1.3px;
+    }
+
+    .login-header h1 {
+        font-size: 25px;
+    }
+
+    .login-header > p:last-child {
+        font-size: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        min-height: 45px;
+
+        font-size: 14px;
+    }
+
+    .login-button {
+        min-height: 45px;
+
+        font-size: 14px;
+    }
+
+    .login-footer {
+        margin-top: 22px;
+
+        padding-top: 18px;
+    }
+
+    .login-footer p {
+        font-size: 12px;
+    }
+
+    .login-footer button {
+        font-size: 13px;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+   400px AND BELOW
+================================= */
+
+@media (max-width: 400px) {
+
+    .login-page {
+        padding: 28px 12px;
+    }
+
+    .login-card {
+        padding: 24px 16px;
+    }
+
+    .login-header h1 {
+        font-size: 23px;
+    }
+
+    .login-header > p:last-child {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        min-height: 44px;
+
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .login-footer p {
+        font-size: 11px;
+    }
+}

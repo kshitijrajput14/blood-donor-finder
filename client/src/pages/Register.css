@@ -1,0 +1,677 @@
+/* =================================
+   DONOR REGISTER PAGE
+================================= */
+
+.register-page {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+
+    padding: 55px 25px;
+
+    background: #f8f9fb;
+
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   MAIN CONTAINER
+================================= */
+
+.register-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 45px;
+
+    align-items: center;
+}
+
+
+/* =================================
+   LEFT INFORMATION
+================================= */
+
+.register-info {
+    padding: 20px 0;
+
+    min-width: 0;
+}
+
+
+.register-tag {
+    margin: 0 0 18px;
+
+    color: #b91c1c;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+
+.register-info h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 46px;
+
+    line-height: 1.12;
+
+    font-weight: 700;
+}
+
+.register-info h1 span {
+    color: #b91c1c;
+}
+
+
+.register-description {
+    width: 100%;
+    max-width: 470px;
+
+    margin: 22px 0 30px;
+
+    color: #667085;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* =================================
+   VERIFICATION NOTE
+================================= */
+
+.registration-note {
+    width: 100%;
+    max-width: 470px;
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+
+
+.note-icon {
+    min-width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+
+    border-radius: 7px;
+
+    font-size: 22px;
+
+    font-weight: 700;
+}
+
+
+.registration-note h3 {
+    margin: 0 0 5px;
+
+    color: #172033;
+
+    font-size: 14px;
+}
+
+
+.registration-note p {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =================================
+   FORM CARD
+================================= */
+
+.register-card {
+    width: 100%;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+
+    min-width: 0;
+}
+
+
+/* =================================
+   FORM HEADING
+================================= */
+
+.form-heading {
+    margin-bottom: 25px;
+}
+
+
+.form-heading h2 {
+    margin: 0 0 6px;
+
+    color: #172033;
+
+    font-size: 23px;
+
+    font-weight: 650;
+}
+
+
+.form-heading p {
+    margin: 0;
+
+    color: #8a93a1;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.register-card form {
+    width: 100%;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    width: 100%;
+}
+
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 17px;
+
+    min-width: 0;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #b91c1c;
+
+    box-shadow: 0 0 0 2px rgba(185, 28, 28, 0.08);
+}
+
+
+/* =================================
+   FILE UPLOAD
+================================= */
+
+.file-upload {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 6px;
+
+    background: #fafafa;
+
+    box-sizing: border-box;
+}
+
+
+.file-upload input {
+    width: 100%;
+
+    height: auto;
+
+    border: none;
+
+    padding: 0;
+
+    background: transparent;
+
+    box-sizing: border-box;
+}
+
+
+.file-upload p {
+    margin: 8px 0 0;
+
+    color: #8a93a1;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.register-submit {
+    width: 100%;
+
+    min-height: 44px;
+
+    margin-top: 5px;
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #b91c1c;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+
+.register-submit:hover {
+    background: #991b1b;
+}
+
+
+/* =================================
+   LOGIN TEXT
+================================= */
+
+.login-text {
+    margin: 20px 0 0;
+
+    text-align: center;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+.login-text button {
+    margin-left: 5px;
+
+    padding: 0;
+
+    border: none;
+
+    background: none;
+
+    color: #b91c1c;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-text button:hover {
+    text-decoration: underline;
+}
+
+
+/* =================================
+   TABLET
+   851px - 1000px
+================================= */
+
+@media (max-width: 1000px) {
+
+    .register-page {
+        padding: 45px 20px;
+    }
+
+    .register-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 25px;
+    }
+
+    .register-info h1 {
+        font-size: 40px;
+    }
+
+    .register-description {
+        font-size: 14px;
+    }
+
+    .register-card {
+        padding: 26px;
+    }
+
+}
+
+
+/* =================================
+   SMALL TABLET
+   601px - 850px
+================================= */
+
+@media (max-width: 850px) {
+
+    .register-page {
+        padding: 45px 20px;
+    }
+
+    .register-container {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        gap: 30px;
+
+        align-items: stretch;
+    }
+
+    .register-info {
+        padding: 5px 0;
+
+        text-align: center;
+    }
+
+    .register-info h1 {
+        font-size: 40px;
+    }
+
+    .register-description,
+    .registration-note {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .registration-note {
+        text-align: left;
+    }
+
+    .register-card {
+        width: 100%;
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+   600px AND BELOW
+================================= */
+
+@media (max-width: 600px) {
+
+    .register-page {
+        min-height: auto;
+
+        padding: 35px 15px 45px;
+    }
+
+
+    /* LEFT SECTION */
+
+    .register-info {
+        padding: 0;
+
+        text-align: center;
+    }
+
+    .register-tag {
+        margin-bottom: 14px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.4px;
+    }
+
+    .register-info h1 {
+        font-size: 32px;
+
+        line-height: 1.2;
+    }
+
+    .register-description {
+        margin: 18px auto 25px;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* VERIFICATION NOTE */
+
+    .registration-note {
+        padding: 15px;
+
+        gap: 12px;
+    }
+
+    .note-icon {
+        min-width: 36px;
+        height: 36px;
+
+        font-size: 19px;
+    }
+
+    .registration-note h3 {
+        font-size: 13px;
+    }
+
+    .registration-note p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+
+    /* FORM CARD */
+
+    .register-card {
+        padding: 22px 18px;
+
+        border-radius: 8px;
+    }
+
+    .form-heading {
+        margin-bottom: 22px;
+    }
+
+    .form-heading h2 {
+        font-size: 21px;
+    }
+
+    .form-heading p {
+        font-size: 12px;
+    }
+
+
+    /* FORM ROW */
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    /* INPUTS */
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input,
+    .form-group select {
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+
+    /* FILE */
+
+    .file-upload {
+        padding: 12px;
+    }
+
+
+    /* BUTTON */
+
+    .register-submit {
+        min-height: 45px;
+
+        font-size: 14px;
+    }
+
+
+    /* LOGIN */
+
+    .login-text {
+        margin-top: 18px;
+
+        font-size: 12px;
+    }
+
+    .login-text button {
+        font-size: 12px;
+    }
+}
+
+
+/* =================================
+   VERY SMALL MOBILE
+   400px AND BELOW
+================================= */
+
+@media (max-width: 400px) {
+
+    .register-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .register-info h1 {
+        font-size: 29px;
+    }
+
+    .register-description {
+        font-size: 13px;
+    }
+
+    .register-card {
+        padding: 20px 15px;
+    }
+
+    .form-heading h2 {
+        font-size: 20px;
+    }
+
+    .registration-note {
+        padding: 13px;
+    }
+}
